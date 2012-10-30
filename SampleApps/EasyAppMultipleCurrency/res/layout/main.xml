@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	android:id="@+id/RelativeLayout01"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical" 
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ScrollView 
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent" >
+		
+		<LinearLayout 
+			android:id="@+id/LinearLayout01" 
+			android:layout_width="fill_parent" 
+			android:layout_height="fill_parent"
+			android:gravity="center"
+			android:orientation="vertical" 
+			android:paddingTop="20dip"
+			android:paddingBottom="20dip"
+			xmlns:android="http://schemas.android.com/apk/res/android">
+					
+			<TextView
+				android:id="@+id/TapjoySDKVersionView" 
+				android:text="Tap Points: "
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:visibility="visible" 
+				android:gravity="center" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Offers (selector)" 
+				android:id="@+id/OffersSelectorButton" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Offers Gold" 
+				android:id="@+id/OffersButton" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Offers Silver" 
+				android:id="@+id/OffersSilverButton" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Get Full Screen Ad Gold" 
+				android:id="@+id/GetFeaturedApp" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Get Full Screen Ad Silver" 
+				android:id="@+id/GetFeaturedAppSilver" 
+				android:visibility="visible" />
+		
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Banner Ad Gold" 
+				android:id="@+id/DisplayAd" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Banner Ad Silver" 
+				android:id="@+id/DisplayAdSilver" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Currency Multiplier 1x" 
+				android:id="@+id/Mulitiplier1XButton" 
+				android:visibility="visible" />
+				
+			<Button 
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:text="Currency Multiplier 2x" 
+				android:id="@+id/Mulitiplier2XButton" 
+				android:visibility="visible" />
+				
+			<TextView
+				android:layout_height="wrap_content" 
+				android:layout_width="fill_parent" 
+				android:id="@+id/PointsTextView" 
+				android:visibility="visible" 
+				android:gravity="center" />
+				
+			<!--  This is for our Banner Ad -->
+			<LinearLayout 
+				android:id="@+id/AdLinearLayout" 
+				android:layout_width="fill_parent" 
+				android:layout_height="100dip"
+				android:gravity="center_horizontal"
+				android:layout_alignParentTop="true"
+				android:orientation="vertical" 
+				xmlns:android="http://schemas.android.com/apk/res/android" />
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
