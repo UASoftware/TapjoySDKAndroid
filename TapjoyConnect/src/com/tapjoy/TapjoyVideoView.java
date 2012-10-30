@@ -19,7 +19,6 @@ import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
-import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.Typeface;
 import android.media.MediaPlayer;
@@ -145,7 +144,8 @@ public class TapjoyVideoView extends Activity implements OnCompletionListener, O
 			TapjoyLog.i(TAPJOY_VIDEO, "deviceScreenLayoutSize: " + deviceScreenLayoutSize);
 			
 			// Resize for tablets.
-			if (deviceScreenLayoutSize == Configuration.SCREENLAYOUT_SIZE_XLARGE)
+//			if (deviceScreenLayoutSize == Configuration.SCREENLAYOUT_SIZE_XLARGE)
+			if (deviceScreenLayoutSize == 0x4) // Configuration.SCREENLAYOUT_SIZE_XLARGE = 0x4
 			{
 				textSize = 32;
 			}
